@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //gives the time when user is using the page
+        const now = new Date();
+        console.log(now);
+
+        //if you want only time or date or month or year
+        console.log(now.getFullYear());
+        console.log(now.getMonth());
+        console.log(now.getHours());
+
+        // to set older time ...in java month start from 0.thats why in 2 it will show march
+        const old = new Date(1996,0,2);
+        console.log(old)
+
+        //to find the age
+        var age = now - old; // this will show in days
+        console.log(age);
+
+        
+
+    </script>
+</body>
+</html>

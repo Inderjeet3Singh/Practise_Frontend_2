@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //default parameters
+         function myfunction(x,y)
+         {
+            if(y== undefined){
+                y=2
+            }
+             return x+y;
+         }
+
+         //in arraow function 
+         const add = (x,y=2) => {return x+y};
+    </script>
+
+
+    <script>
+        console.log(myfunction, myfunction(4));
+        console.log(add, add(10))
+
+    </script>
+
+    <script>
+        //write a code to find the maximum of a number
+         const x = findmax(22,55,68,25,11);
+          function findmax(){
+            let max= -Infinity;
+            for(let i=0; i< arguments.length;i++)
+            {
+              if(max < arguments[i])
+              {
+                max= arguments[i];
+              }
+            }
+            return max;
+          }
+
+          console.log(findmax, " max value is", x);
+    </script>
+
+
+    <script>
+        //write a code to sum of the numbers
+        const y = findsum(10,50,20,30,40);
+
+        function findsum()
+        {
+            let sum = 0;
+            for(let i=0; i< arguments.length; i++)
+            {
+                sum += arguments[i];
+            }
+
+            return sum;
+        }
+
+        console.log(findsum, " sum is", y);
+    </script>
+</body>
+</html>

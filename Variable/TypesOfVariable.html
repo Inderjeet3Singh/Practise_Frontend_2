@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> const variable / let vriable/ var variable/ nothing variable</h1>
+    <script>
+        const pi =3.14
+        console.log(pi)
+
+        let a=1;
+        let b = 2;
+        let c = a+b;
+        console.log(c)
+
+        var num= 5;
+        alert(num)
+
+        num1 =10; //nothing variable are by default are var 
+        console.log(num1)
+
+        //we can redeclare the same variable 
+        //earlier num was integer but know we redeclaring in string type
+        var num= "ashish";
+        alert(" redeclare variable " +num) 
+    </script>
+
+    <h1>Problem 1: declaring a variable but not assiging the value</h1>
+    <script>
+        var str; // str is not initialize
+        console.log(str)
+        //o/p will be undefined
+    </script>
+
+<h1>Problem 2: NaN</h1>
+<script>
+    var number = 5/str; // this will be because of str has not be intialize
+    console.log(number)
+    //o/p will be NaN
+</script>
+
+<h1>how to check the data type of any variable</h1>
+<script>
+    document.write(typeof num," ", typeof pi," ", typeof str, " ", typeof num1);
+    //num= string pi= number str= undefined num1= number
+   
+</script>
+
+
+</body>
+</html>

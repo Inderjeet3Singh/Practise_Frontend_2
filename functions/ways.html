@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1st way of declaration 
+        function sum(x,y)
+        {
+            sum = x+y;
+            return sum;
+        }
+
+        // 2nd way of declaration--this is known as expression
+        var multi = function(x,y){return x *y};
+
+        //3rd way -arrow funtion
+        var exp = (x,y) => {return x**y};
+
+        //for single statement arrow function can be defined withoud return statement
+        var add=(x,y) => x+y;
+
+        //4th way-- initalizing at the time of declaration of arrow function
+        var sub = ((x,y) => {return x-y})(10,5);
+
+    </script>
+
+    <script>
+        console.log(sum,sum(10,5));
+        console.log(multi, multi(10,5));
+        console.log(exp,exp(2,3));
+        console.log(add, add(10,5));
+        console.log(sub);
+    </script>
+</body>
+</html>

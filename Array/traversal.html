@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var stu = ["baba", "suchit", "robert", "ajay"];
+        //by for loop
+
+        for(let i=0; i< stu.length;i++)
+        {
+            console.log(stu[i]);
+        }
+
+        //by position( by position means variable postion , in means in opertor)
+        for(var position in stu)
+        {
+            console.log(stu[position]);
+        }
+
+        //by using for each loop
+        for(let students of stu)
+        {
+            console.log(students);
+        }
+    </script>
+</body>
+</html>

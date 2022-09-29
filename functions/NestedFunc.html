@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //fucntion returning function or nested function
+        function multiplier (multiplicationfactor)
+        {
+            var fun = (num) =>{ return num * multiplicationfactor};
+
+            return fun;
+        }
+
+        var double = multiplier(2); // double is function
+        var triple = multiplier(3); // triple is function
+
+        console.log(multiplier, " ", double,double (32));
+        console.log( triple(22));
+    </script>
+</body>
+</html>

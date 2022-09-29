@@ -1,0 +1,1 @@
+alert("welcome to seperate file js demo... ");

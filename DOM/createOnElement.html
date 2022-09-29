@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>creating an html element</h1>
+    <div id="div1"></div>
+    <script>
+        var elt= document.createElement("img");
+        elt.src="baba1.jpg";
+        elt.style.width="150px";
+        document.getElementById("div1").appendChild(elt);
+
+        //for inserting elt before div1 inside body
+        // div1 = document.getElementById("div1");
+        // document.body.insertBefore(elt, div1);
+
+        //can you replace an element
+        div1.innerHTML="<img src= 'baba2.jpg' >";
+    </script>
+</body>
+</html>

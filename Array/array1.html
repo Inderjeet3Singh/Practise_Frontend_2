@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var emps = new Array(); // create a blank array
+        var students = new Array("amit", "durgesh", "baba");
+
+        console.log(emps);
+        console.log(students);
+
+        //2nd way of declaring an array
+        var kk = [1,4,16];
+        console.log(kk);
+
+        //difference with other lang array.
+        //in js arrayb can hold multiple data types
+        var diff =[ 5, "amit", 5.8, "bhai"]
+        console.log(diff);
+        console.log(diff[2]);
+
+        //replacing a particular elemnt
+        diff[2] = 10.4;
+        console.log(diff);
+
+        //putting 99th element
+        diff[99]= "total ele will be 100";
+        console.log(diff);
+        console.log(diff[50]);
+
+        //arrow function 
+        //push function-- used to insert an element in an array
+        kk.push(18);
+        console.log(kk);
+
+        //pop function-- last element will be poped out
+        kk.pop();
+        console.log(kk);
+
+        //sort method-- sort in alpahbetical order
+        console.log(students.sort());
+
+        //the numbers will get sorted according to the string
+        console.log(kk.sort());
+
+        //reverse method-- sorted in reverse order
+        console.log(students.reverse());
+
+        //concat -- this is used to concat to array
+        console.log(students.concat(["ali", "ayush", "palu"]));
+        console.log(students.concat(diff));
+
+        //splice --- to remove an elemant from an array
+        students.splice(2);
+        console.log(students);
+
+
+
+
+    </script>
+</body>
+</html>

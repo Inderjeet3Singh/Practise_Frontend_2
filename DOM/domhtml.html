@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--chnaging html html-->
+    <p id="p1">dom html</p>
+    <button onclick="myfunction()">to change</button>
+
+    <script>
+      function myfunction()
+      {
+        document.getElementById("p1").innerHTML="hello html";
+      }
+    </script>
+
+    <!--chnaging html attributes-->
+    <img id="imageid" src="baba2.jpg">
+    <button onclick="myiamgefunction()">to change</button>
+    <div id="demo"></div>
+    <script>
+        function myiamgefunction()
+        {
+            document.getElementById("imageid").src="baba1.jpg";
+        }
+        document.getElementById("demo").innerHTML = "Date : " + Date(); 
+        
+        //to write directly on screen
+        document.write(Date());
+    </script>
+
+</body>
+</html>

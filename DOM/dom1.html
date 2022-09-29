@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Different ways of accessing elements -->
+    <!--by tag name-->
+    <p>Para1</p>
+    <p>Para2</p>
+    <script>
+        var para= document.getElementsByTagName("p");
+        console.log(para); //this will show collection of properties and give for the both para.
+
+        //for specific property for both the paragraph
+        for(var i=0;i<para.length;i++)
+        {
+            console.log(para[i].innerText);
+        }
+        
+        //for specific para only
+        var para1= document.getElementsByTagName("p")[0].innerText;
+        console.log(para1);
+    </script>
+
+    <!--by class name-->
+    <div class="myclass">div1</div>
+    <p class="myclass">para3</p>
+    <script>
+        var classes=document.getElementsByClassName("myclass");
+        console.log(classes); //this will show the set of property
+
+        //for specific property
+        for(var i=0;i<classes.length;i++){
+            console.log(classes[0].innerHTML)
+        }
+
+    </script>
+
+    <!--by id-->
+    <div id="divid">div1</div>
+    <script>
+        var byId= document.getElementById("divid").innerHTML;
+        console.log(byId);
+
+        //note: if there are multiple id of same name then by default it take only 0th elemnet of the id.
+    </script>
+
+    <!--by css selector-->
+    <p>para<span>span inside para</span>para</p>
+    
+    <script>
+    //If you want to find all HTML elements that match a specified CSS selector (id, class names, types, attributes, values of attributes, etc), use the querySelectorAll() method.
+    var ele = document.querySelectorAll("p>span");
+    for(var i=0; i<ele.length;i++)
+    {
+        console.log(ele[i].innerText)
+    }
+    </script>
+</body>
+</html>
